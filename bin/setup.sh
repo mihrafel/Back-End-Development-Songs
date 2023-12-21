@@ -3,8 +3,8 @@ echo "****************************************"
 echo " Setting up Capstone Environment"
 echo "****************************************"
 
-sudo apt-get update
 echo "Installing Python 3.8 Virtual Environment"
+sudo apt-get update
 sudo DEBIAN_FRONTEND=noninteractive apt-get install -y python3.8-venv
 
 echo "Making Python 3.8 the default..."
@@ -14,8 +14,9 @@ echo "Checking the Python version..."
 python3 --version
 sudo apt install python3.10-venv
 
+
 echo "Creating a Python virtual environment"
-python3 -m venv ~/backend-songs-venv
+python3 -m venv ~/backend-django-venv
 
 echo "Configuring the developer environment..."
 echo "# Backend Capstone Project additions" >> ~/.bashrc
